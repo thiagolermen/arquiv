@@ -1,0 +1,221 @@
+body, html{
+    font-family: 'Roboto', sans-serif;
+    height: 100%; 
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+  
+footer p {
+    margin-bottom: .25rem;
+}
+
+#header{
+    width: 100%;
+    transition: background ease-out 0.2s;
+}
+
+#ufrgsnavbar{
+    background-color: var(--primary-dark);
+    width: 100%;
+    transition: background ease-out 0.2s;
+}
+
+#arquivnavbar{
+    background-color: var(--primary);
+    width: 100%;
+    transition: background ease-out 0.2s;
+}
+
+
+#header.active {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(116,131,151,0.8);
+    z-index: 9999;
+}
+  
+#header .navbar-collapse {
+    width: auto;
+}
+
+#header .navbar-brand{
+    color: var(--light);
+}
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--light);
+    border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+    font-weight: bold;
+}
+
+#bg{
+    background-color: #fff; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat:repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.vertical-center {
+    display: table;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
+
+#bg > div > div.container > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bg > div > div.input-group.mb-3 > div > ul > li > a{
+    text-decoration: none;
+    color: var(--grey);
+  }
+
+#bg > div > div.input-group.mb-3 > div > ul > li > a:hover{
+    text-decoration: none;
+    color: var(--black);
+}
+
+#main_search{
+    align-items: center;
+}
+
+
+
+
+#me{
+    background-image: url("https://thiagolermen.github.io/assets/me.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+#contact{
+    background-color: var(--grey); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100%;  
+}
+
+#description{
+    width: 60%;
+}
+
+#about{
+    color: var(--light);
+}
+
+.navbar-toggler-icon{
+    color: var(--grey);
+}
+
+#me .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--light);
+    border-bottom: solid 4px transparent;
+}
+
+#me .nav-link:hover {
+    color: var(--light);
+    text-decoration: underline;
+}
+
+
+.album-bg{
+    background-color: rgba(116,131,151,0.8);
+    padding: 20px;
+}
+
+.block{
+    background-color: var(--light);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 60%;
+}
+
+.card{
+    height: 100%;
+}
+
+.card-body{
+    min-height: 30%;
+    max-height: 20%;
+    margin-bottom: 4%;
+}
+
+.card-btn{
+    position: absolute;
+    left: 5%;
+    bottom: 4%;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color:transparent;
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+.jumbotron-heading {
+    font-weight: 300;
+}
+  
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+.btn-outline-secondary {
+    color: var(--light);
+    background-color: var(--primary-dark);
+    border-color: var(--primary); /*set the color you want here*/
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active, .btn-outline-secondary.active, .open>.dropdown-toggle.btn-outline-secondary {
+    color: var(--light);
+    background-color: var(--primary);
+    border-color: var(--primary-dark); /*set the color you want here*/
+}
+
+.navlink-separator{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--light);
+    border-bottom: solid 4px transparent;
+    padding: 10px;
+}
+
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(116,131,151,0.8);; }
