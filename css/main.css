@@ -2,6 +2,11 @@
 @import url(./config.css);
 @import url(./global.css);
 @import url(./custom.css);
+@import url(./subtopicos.css);
+@import url(./login.css);
+@import url(./cadastro.css);
+@import url(./submissao.css);
+@import url(./resultados.css);
 @import url(./posts.css);
 @import url(./responsive.css);
 

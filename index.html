@@ -23,24 +23,19 @@
 
                 <div class="navbar" id="ufrgsnavbar">
                     <a class="navbar-brand">
-                        <img class="card-img-top" style="width: 70px" src="assets/ufrgs.png" alt="Card image cap">
+                        <img class="card-img-top" style="width: 70px; margin-left: 25%" src="assets/ufrgs.png" alt="Card image cap">
                         <a class="navbar-brand"  style="margin-right: 40%;">Universidade Federal do Rio Grande do Sul</a>
                     </a>
                 </div>
 
                 <nav class="navbar navbar-expand-lg navbar-dark" id="arquivnavbar">
-                    <a class="navbar-brand" href="index.html">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
                         <ul class="navbar-nav" id="about">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Login</a>
+                                <a class="nav-link active" href="src/login.html">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="paths/about.html">Cadastro</a>
+                                <a class="nav-link" href="src/cadastro.html">Cadastro</a>
                             </li>
                         </ul>
                     </div>
@@ -51,7 +46,7 @@
         <!--//HEADER-->
 
         <main role="main" id="bg">
-            <div class="jumbotron vertical-center"> <!-- 
+            <div class="jumbotron vertical-center" style="width: 100%"> <!-- 
                 ^--- Added class  -->
                 <div class="container">
                     <img class="center" src="assets/logo.png" href="#" alt="main logo">
@@ -66,15 +61,17 @@
                           <li classs="main_dropdown"><a href="#">Autor</a></li>
                         </ul>
                     </div>
-                    <button class="btn btn-default border-dark" style="background-color: var(--primary)">
+                    <button class="btn btn-default border-dark" style="background-color: var(--primary)" onclick="location.href='src/resultados.html';">
                         <img src="assets/search-icon.png"/>
-                   </button>
+                    </button>   
                 </div>
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">Tópicos: </li>
-                    <li class="list-group-item">Matemática</li>
-                    <li class="list-group-item">Ciência da computação</li>
+                <ul class="list-inline" style="margin-left: 30.5%;">
+                    <li class="list-inline-item">Tópicos: </li>
+                    <li class="list-inline-item"><a href="src/subtopicos.html" class="link-dark">Física</a></li>
+                    <li class="list-inline-item"><a href="src/subtopicos.html" class="link-dark">Matemática</a></li>
+                    <li class="list-inline-item"><a href="src/subtopicos.html" class="link-dark">Ciência da Computação</a></li>
                 </ul>
+                
             </div>
         </main>
 
