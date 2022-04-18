@@ -141,7 +141,19 @@ footer p {
     transition: margin-left .5s;
 }
 
+#container_stats{
+    padding-left: 0%;
+    margin-right: 60%;
+    transition: margin-left .5s;
+}
+
 #ver_pdf{
+    color: white;
+    float: right;
+    position: relative;
+}
+
+#ver_stats{
     color: white;
     float: right;
     position: relative;
