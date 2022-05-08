@@ -1,0 +1,10 @@
+{
+    "papers":[
+        {
+            "name": "um artigao pica",
+            "abstract": "um abstrat pica",
+            "authors": "really pica authors",
+            "pdf": "https://arxiv.org/pdf/2201.00089.pdf"
+        }
+    ]
+}

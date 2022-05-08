@@ -63,7 +63,7 @@
                         oninput="document.getElementById('vagabunda').innerHTML=document.getElementById('toma_no_cu').files[0].name;"/>
                         <label class="form-control" id="vagabunda" for="toma_no_cu">Nenhum arquivo adicionado</label>
                     </div>
-                    <button class="btn btn-default border-dark vertical-center" id="cadastro_btn" style="background-color: var(--primary); color: white;" >
+                    <button class="btn btn-default border-dark vertical-center" id="cadastro_btn" style="background-color: var(--primary); color: white;" onclick=submit() >
                         Submeter
                     </button>
                 </div>
@@ -78,5 +78,15 @@
         ></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/subtopicos.js"></script>
+        <script>
+            function submit(){
+                var tempSub = "UM ARTIGAO PICA"
+                sessionStorage.setItem('tempSub', tempSub);
+
+
+                location.href='../index.html';
+
+            }
+        </script>
     </body>
 </html>

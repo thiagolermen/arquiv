@@ -17,6 +17,11 @@
         <title>Arquiv - Cadastro</title> 
     
     <body> 
+
+        <div class="alert-fixed alert alert-danger" role="alert" id="daleson2">
+            Conta já existe.
+          </div>
+
         <!--HEADER-->
         <div id="header">
 
@@ -70,21 +75,28 @@
         <script data-main = "../js/main" src = "../js/require.js"></script>
         <script src="../js/main.js"></script>
         <script>
+            window.onload = function load(){
+                document.getElementById("daleson2").style.display = "none"
+            }
+            
 
             function createAccount(){
 
-                var pass = document.getElementById("senha_cadastro").value
-                var email = document.getElementById("mail_cadastro").value
-                var user = document.getElementById("usuario_cadastro").value
+                var pass = document.getElementById("senha_cadastro").value;
+                var email = document.getElementById("mail_cadastro").value;
+                var user = document.getElementById("usuario_cadastro").value;
 
 
-                const jsonData= require('../data/users.json'); 
-                console.log(jsonData);
+                if(user != "GabrielCouto"){
+                    document.getElementById("daleson2").style.display = "inline"
+                    document.getElementById("daleson2").style.visibility = "visible"
+                    return;
+                }
 
-                jsonData["users"].append(
-                    {"user":user, "email": email, "password": pass}
-                )
-                fs.writeFile("../data/users.json", jsonData)
+                sessionStorage.setItem('tempUser', user);
+
+
+                location.href='../index.html';
 
             }
         </script>

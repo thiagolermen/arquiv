@@ -48,7 +48,7 @@
                         <span class="input-group-text" id="inputGroup-sizing-default">Senha</span>
                         <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
-                    <button class="btn btn-default border-dark vertical-center" id="login_btn" style="background-color: var(--primary); color: white;" >
+                    <button class="btn btn-default border-dark vertical-center" id="login_btn" style="background-color: var(--primary); color: white;" onclick=login()>
                         Login
                     </button>
                 </div>
@@ -63,5 +63,18 @@
         ></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/subtopicos.js"></script>
+        <script>
+
+            function login(){
+                var item = sessionStorage.getItem('tempUser');
+                sessionStorage.setItem('isLoggedIn', item);
+
+                sessionStorage.setItem('tempLogin', item);
+                sessionStorage.setItem('tempUser', '');
+
+                location.href='../index.html';
+
+            }
+        </script>
     </body>
 </html>
