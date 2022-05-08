@@ -80,11 +80,11 @@
                 <div class="input-group mb-3" id="main_search">
                     <input type="text" class="form-control border-dark" placeholder="Buscar" aria-label="Username">
                     <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle border-dark" type="button" data-toggle="dropdown">Todos os campos
+                        <button class="btn btn-light dropdown-toggle border-dark" type="button" data-toggle="dropdown" id="BAGULHO">Todos os campos
                         <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                           <li classs="main_dropdown"><a href="#">Título</a></li>
-                          <li classs="main_dropdown"><a href="#">Autor</a></li>
+                          <li classs="main_dropdown"><a href="#" onclick=trocarbagulho()>Autor</a></li>
                         </ul>
                     </div>
                     <button class="btn btn-default border-dark" style="background-color: var(--primary)" onclick="location.href='src/resultados.html';">
@@ -109,6 +109,12 @@
         ></script>
         <script src="js/bootstrap.min.js"></script>
         <script>
+
+
+            function trocarbagulho(){
+                document.getElementById("BAGULHO").innerHTML = "Autor";
+            }
+
             window.onload = function hideLoggedInOptions(){
                 var isLoggedIn = sessionStorage.getItem('isLoggedIn');
                 if(isLoggedIn !== "false"){

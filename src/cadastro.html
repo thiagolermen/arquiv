@@ -19,7 +19,7 @@
     <body> 
 
         <div class="alert-fixed alert alert-danger" role="alert" id="daleson2">
-            Conta já existe.
+            Usuário já existe.
           </div>
 
         <!--HEADER-->
@@ -90,6 +90,8 @@
                 if(user != "GabrielCouto"){
                     document.getElementById("daleson2").style.display = "inline"
                     document.getElementById("daleson2").style.visibility = "visible"
+                    var duration = 2000; //2 seconds
+                    setTimeout(function () { document.getElementById("daleson2").style.display="none"; }, duration);
                     return;
                 }
 
